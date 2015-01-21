@@ -136,7 +136,7 @@ function station_schedule_install() {
 
   node_types_rebuild();
   $types = node_type_get_types();
-  node_add_body_field($types['station_schedule'], st('A description of the schedule.'));
+  node_add_body_field($types['station_schedule'], $label='A description of the schedule.');
 }
 
 /**
